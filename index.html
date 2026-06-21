@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>信託契約 - 教學範例</title>
+<title>樂活人生安養信託契約書 — 教學範本</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: #f5f0eb;
-    font-family: "Noto Serif TC", "PMingLiU", serif;
+    font-family: "Noto Serif TC", "PMingLiU", "Microsoft JhengHei", serif;
     color: #2c1810;
     padding: 40px 20px;
   }
   .container {
-    max-width: 800px;
+    max-width: 860px;
     margin: 0 auto;
     background: #fff;
     padding: 50px 60px;
@@ -22,214 +22,640 @@
   }
   h1 {
     text-align: center;
-    font-size: 36px;
-    letter-spacing: 8px;
-    margin-bottom: 40px;
+    font-size: 32px;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
     color: #1a1a1a;
-    border-bottom: 2px solid #c9a96e;
-    padding-bottom: 20px;
   }
-  .clause {
-    margin-bottom: 28px;
-    line-height: 2;
-    font-size: 22px;
-    text-align: justify;
-  }
-  .clause-title {
-    font-weight: bold;
-    font-size: 24px;
+  .subtitle {
+    text-align: center;
+    font-size: 20px;
     color: #8b4513;
-    margin-bottom: 6px;
-  }
-  .party-info {
-    background: #faf6f1;
-    border-left: 4px solid #c9a96e;
-    padding: 16px 20px;
     margin-bottom: 30px;
-    line-height: 2.2;
-    font-size: 22px;
-  }
-  .party-info .label { display: inline-block; min-width: 100px; }
-  .redacted { color: #c0392b; font-weight: bold; }
-  .signature-area {
-    margin-top: 50px;
-    border-top: 1px dashed #ccc;
-    padding-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  .signature-block { min-width: 200px; }
-  .signature-block .title { font-weight: bold; margin-bottom: 8px; }
-  .signature-block .line { border-bottom: 1px solid #333; width: 200px; margin: 20px 0 6px; }
-  .signature-block .label { font-size: 18px; color: #666; }
-  .date-area {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 22px;
-    color: #555;
-    letter-spacing: 3px;
-  }
-  .page-note {
-    text-align: center;
-    color: #999;
-    font-size: 18px;
-    margin: 20px 0;
-    border-top: 1px dotted #ddd;
-    padding-top: 20px;
   }
   .disclaimer {
     background: #fff3e0;
     border: 1px solid #ffcc80;
     border-radius: 4px;
     padding: 16px 20px;
-    font-size: 18px;
+    font-size: 17px;
     color: #e65100;
     margin-bottom: 30px;
     text-align: center;
   }
+  .clause {
+    margin-bottom: 28px;
+    line-height: 2;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .clause-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #8b4513;
+    margin-bottom: 6px;
+    margin-top: 10px;
+  }
+  .party-info {
+    background: #faf6f1;
+    border-left: 4px solid #c9a96e;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    line-height: 2;
+    font-size: 18px;
+  }
+  .page-break {
+    text-align: center;
+    color: #aaa;
+    font-size: 16px;
+    margin: 40px 0 30px;
+    border-top: 1px dashed #ddd;
+    padding-top: 20px;
+    letter-spacing: 2px;
+  }
+  .redacted {
+    color: #c0392b;
+    background: #fce4e4;
+    padding: 0 6px;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  .signature-area {
+    margin-top: 50px;
+    border-top: 1px dashed #ccc;
+    padding-top: 40px;
+  }
+  .signature-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .signature-block {
+    min-width: 240px;
+    line-height: 2;
+    font-size: 18px;
+  }
+  .signature-block .title { font-weight: bold; margin-bottom: 4px; }
+  .signature-block .line {
+    border-bottom: 1px solid #333;
+    width: 220px;
+    margin: 12px 0 6px;
+  }
+  .signature-block .label { font-size: 16px; color: #666; }
+  .date-area {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #555;
+    letter-spacing: 3px;
+  }
+  .form-field {
+    display: inline-block;
+    border-bottom: 1px solid #999;
+    min-width: 120px;
+    padding: 0 8px;
+    color: #c0392b;
+  }
+  .form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 17px;
+  }
+  .form-table td, .form-table th {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    vertical-align: top;
+  }
+  .form-table th {
+    background: #f5f0eb;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .indent-1 { padding-left: 24px; }
+  .indent-2 { padding-left: 48px; }
+  .note {
+    font-size: 16px;
+    color: #888;
+    margin-top: 4px;
+  }
   @media (max-width: 600px) {
     .container { padding: 20px; }
-    h1 { font-size: 28px; letter-spacing: 4px; }
+    h1 { font-size: 24px; letter-spacing: 3px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
+
   <div class="disclaimer">
-    ⚠ 本頁面為教學範例，所有個資已代碼化處理，仅供参考。
+    本頁面為教學範本，所有個資已代碼化處理，僅供教學參考使用。
   </div>
 
-  <h1>信託契約</h1>
+  <h1>樂活人生安養信託契約書</h1>
+  <div class="subtitle">— 臺幣信託（範本）—</div>
 
-  <div class="clause">
-    <div class="clause-title">第一條 信託關係人</div>
-    <div class="party-info">
-      <div><span class="label">委託人：</span><span class="redacted">王小姐</span> (以下簡稱甲方)，身分證字號：<span class="redacted">00</span></div>
-      <div><span class="label">地址：</span><span class="redacted">台南市</span></div>
-      <div style="margin-top:8px;"><span class="label">受託人：</span><span class="redacted">王媽媽</span> (以下簡稱乙方)，身分證字號：<span class="redacted">00</span></div>
-      <div><span class="label">地址：</span><span class="redacted">台南市</span></div>
-      <div style="margin-top:8px;"><span class="label">受益人：</span><span class="redacted">王小姐</span> (以下簡稱甲方)，身分證字號：<span class="redacted">00</span></div>
-      <div><span class="label">地址：</span><span class="redacted">台南市</span></div>
-    </div>
+  <div class="party-info">
+    <div>契約書編號：<span class="redacted">[已代碼化]</span></div>
+    <div style="margin-top:8px;">立約人：</div>
+    <div>委託人兼受益人：<span class="redacted">[已代碼化]</span>（以下簡稱委託人）</div>
+    <div>受　託　人：快樂銀行股份有限公司（以下簡稱受託人）</div>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第二條 信託目的</div>
-    <p>本信託是為受益人之利益管理處分信託財產，無信託法第五條及第六條之情形發生。</p>
+    為保障委託人本人之利益，約定由受託人以信託財產支付委託人之生活、醫療、養護或其他等費用，以達維護財產安全及專款給付之目的，委託人茲委託受託人收受、管理及運用信託財產，雙方合意訂立樂活人生安養信託契約（以下簡稱本契約）以資共同遵守，約定條款如下：
+  </div>
+
+  <!-- ===== 條文內容：第一條～第二十八條 ===== -->
+
+  <div class="clause">
+    <div class="clause-title">第一條 信託目的</div>
+    <p>委託人為保障本人未來生活、醫療、養護或其他所需等目的，將信託財產信託予受託人，由受託人依照本契約之約定，為委託人之利益，管理及運用信託財產，並辦理委託人安養專款給付事宜。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第三條 信託資產</div>
-    <p>本信託為不動產自益信託，信託財產如下：</p>
-    <div class="party-info" style="margin-top:10px;">
-      <div>房屋門牌號碼、地號或建號：<span class="redacted">00段1111</span></div>
-      <div>面積：100.59 平方公尺 &nbsp;|&nbsp; 持分：1分之1</div>
-      <div style="margin-top:8px;">地號：<span class="redacted">00段1111</span></div>
-      <div>面積：821.82 平方公尺 &nbsp;|&nbsp; 持分：10000000分之211847</div>
-      <div style="margin-top:8px;">房屋地址：<span class="redacted">台南市</span> &nbsp;|&nbsp; 持分：1分之1</div>
-      <div style="margin-top:8px;">建號：<span class="redacted">00段1111</span></div>
-    </div>
+    <div class="clause-title">第二條 信託財產</div>
+    <p>一、本契約之信託財產係指委託人簽訂本契約後，依本契約之約定存入信託專戶之資金，其資金來源包含：</p>
+    <p class="indent-1">（一）委託人交付信託之金錢。</p>
+    <p class="indent-1">（二）以委託人本人為生存保險受益人之保險契約可得受領之保險金。</p>
+    <p>二、委託人於信託存續期間內得新增信託財產。</p>
+    <p>三、委託人以交付票據方式交付信託財產者，應俟票款兌付後之金錢為信託財產；委託人以匯款方式匯入者，應匯入本契約第五條第三項由受託人為委託人開立之信託專戶，並將匯入日期及金額事先通知受託人。委託人若怠於通知受託人，因而發生損失，概由委託人自行負擔。</p>
+    <p>四、委託人以其本人為生存保險受益人之保險契約（保險契約資料如本契約第二十九條「其他約定事項」記載及嗣後以書面通知增列者）可得受領之保險金作為信託財產者，應於委託人向各人壽保險公司（以下簡稱保險公司）請領後，逕由保險公司依委託人之指示交付受託人，其信託財產金額以保險公司實際存入信託專戶之金額為準。</p>
+    <p>五、受託人因信託財產之管理、運用所取得之孳息、利益或因信託財產之滅失、毀損等其他事由所取得之財產權，均屬信託財產。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第四條 信託期間</div>
-    <p>一、自本契約經各方當事人簽訂完成，且甲方將本契約第三條所述信託財產交付予乙方之日起生效，為期____年，至民國______年_____月_____日止，本信託關係視為消滅。</p>
-    <p>二、信託契約存續期間屆滿前，甲方得隨時終止本契約。如委託人已受監護宣告，且乙方已知悉者，乙方應通知監護人。甲方同意如甲方經法院為監護之宣告，監護人得為甲方之利益代理其終止本契約，惟仍應經監察人之書面同意，始得為之。</p>
+    <div class="clause-title">第三條 信託存續期間</div>
+    <p>本契約信託存續期間以壹年為一期，自委託人簽訂本契約並首次交付信託財產之日起生效，除有第十六條之情事外，信託存續期間屆期自動逐期展延。</p>
+  </div>
+
+  <div class="page-break">— 第 1 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第四條 信託監察人</div>
+    <p>一、委託人若有指定設置信託監察人，應由信託監察人出具願任同意書及身分證明文件始生效力。委託人如無指定設置信託監察人，則本契約有關信託監察人之約定均不適用。</p>
+    <p>二、信託監察人得以自己名義，為受益人為有關信託之訴訟上或訴訟外之行為，並以善良管理人之注意義務，依本契約之約定及相關法令執行其職務。</p>
+    <p>三、信託監察人有正當事由時，得經由委託人同意或法院之許可辭任；信託監察人怠於執行其職務或有其他重大事由時，委託人得解任之。</p>
+    <p>四、信託監察人死亡、辭任或解任或解散或經主管機關撤銷、廢止許可或經法院宣告解散，有約定次順位者，由次順位信託監察人接任。如發生無人接任信託監察人情形時，委託人得選任繼任信託監察人，並以書面通知受託人，繼任信託監察人就任生效日為受託人接獲委託人書面通知及繼任信託監察人出具願任同意書之日。繼任信託監察人就任生效日前，本契約視同無信託監察人，委託人得單獨行使本契約有關應經信託監察人同意或承認之各項約定。</p>
+    <p>五、信託監察人之報酬依本契約第二十九條「其他約定事項」勾選方式為之，委託人得以書面指示受託人變更之。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第五條 信託財產管理方式</div>
-    <p>信託期間，乙方需為受益人之利益全權管理處分信託財產。</p>
+    <div class="clause-title">第五條 信託財產之管理及運用</div>
+    <p>一、本契約信託財產之管理及運用方法係單獨管理運用，受託人對信託財產無運用決定權。</p>
+    <p>二、信託財產應以「快樂銀行受託信託財產專戶」之名義登載。為管理運用信託財產所開立之各項帳戶或簽訂之合約、文件，應由受託人以該等名義辦理之。</p>
+    <p>三、受託人應以信託專戶名義為委託人開立新臺幣綜合存款帳戶（以下簡稱信託專戶）以利處理信託事務之現金收支，其存款、提款等事宜均由受託人辦理。</p>
+    <p>四、受託人應於活期性存款中保留本契約第二十九條「其他約定事項」第三點給付金額及信託管理費之一年額度或新臺幣10萬元（以二者孰高之金額為準），其餘金額扣除其他運用項目後，以萬元為單位辦理定期存款（一年期，機動利率，每月領息）。</p>
+    <p>五、信託財產之運用範圍除銀行存款外，得運用於受託人同意受託投資之下列金融商品：</p>
+    <p class="indent-1">（一）國內或國外共同基金。</p>
+    <p class="indent-1">（二）指數股票型基金（Exchange Traded Fund，以下簡稱「ETF」）。</p>
+    <p class="indent-1">（三）國外債券。</p>
+    <p>六、委託人同意受託人運用信託財產時，得採下列行為：</p>
+    <p class="indent-1">（一）以信託財產購買受託人銀行業務部門經紀之有價證券或票券。</p>
+    <p class="indent-1">（二）以信託財產存放於受託人銀行業務部門或其利害關係人處作為存款或與其銀行業務部門為外匯相關之交易。</p>
+    <p class="indent-1">（三）以信託財產與本身或其利害關係人為信託業法第二十五條第一項以外之其他交易。</p>
+    <p class="indent-1">（四）其他經主管機關規定許可之行為。</p>
+  </div>
+
+  <div class="page-break">— 第 2 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第六條 告知事項與風險承擔</div>
+    <p>一、信託財產存放於受託人銀行業務部門之存款，屬受託人銀行業務部門所投保之中央存款保險股份有限公司（以下簡稱「中央存款保險公司」）理賠之項目，理賠之對象範圍及其上限，依照中央存款保險公司之規定。如信託財產運用於存款以外之標的，該存款以外之標的不受中央存款保險機制之保障。</p>
+    <p>二、委託人若指定將信託財產運用於本契約第五條第五項所約定存款以外之金融商品者，委託人同意下列約定：</p>
+    <p class="indent-1">（一）僅限於受託人得受理運用者，且商品風險等級不得超逾委託人之風險屬性，委託人須配合受託人辦理相關程序並應遵循相關法令。</p>
+    <p class="indent-1">（二）各投資標的之申購與贖回交易之約定及手續費等事項，均依受託人辦理信託資金投資國內外有價證券相關規定辦理。</p>
+    <p class="indent-1">（三）委託人指示運用投資標的前，應確實詳閱該投資標的之說明資料、契約及相關文件（包括但不限於投資標的之公開說明書及投資人須知），並瞭解其投資風險（包括但不限於匯率風險、信用風險、流動性風險、利率風險等所導致信託資金之虧損、跌價及匯兌損失、或投資標的暫停受理贖回或解散、清算等風險）。</p>
+    <p class="indent-1">（四）委託人係基於獨立審慎之投資判斷後，決定各項投資指示，委託人並瞭解投資最大可能損失為信託本金之全部及孳息。</p>
+    <p class="indent-1">（五）委託人如為受輔助宣告人，應由輔助人同意並陪同委託人辦理；委託人如為受監護宣告之人，不得辦理存款以外之金融商品投資。</p>
+    <p>三、委託人對信託財產之運用，就投資標的、運用方式、金額、條件及期間等事項，應以書面向受託人為具體可行之指示（如設有信託監察人者，並應經信託監察人之書面同意），由受託人依照指示辦理，受託人如認有違反法令之虞，或有不符合本契約約定之情形，受託人應告知委託人，並得不遵從該指示，如因此發生任何損失，概由委託人自行負擔。</p>
+    <p>四、信託財產因管理及運用所生之損益依法悉由委託人自行承擔，受託人不保證信託財產之盈虧及最低收益率。</p>
+    <p>五、新臺幣與外幣間之兌換應以委託人名義依中央銀行「外匯收支或交易申報辦法」之規定辦理結匯，其兌換匯率依兌換日受託人銀行業務部門牌告即期（買入或賣出）匯率辦理。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第六條 分別管理</div>
-    <p>乙方應將信託財產與其自有財產及其他信託財產分別管理，並就本信託造具帳戶簿，載明處理狀況。</p>
-  </div>
-
-  <div class="page-note">— 第 1 頁／共 3 頁 —</div>
-
-  <div class="clause">
-    <div class="clause-title">第七條 受託人異動</div>
-    <p>當乙方發生信託法所規定關於受託人之辭任、死亡、受破產宣告或受監護或輔助宣告等情事時，由委託人指定新受託人擔任。</p>
+    <div class="clause-title">第七條 信託收益計算、分配之時期及方法</div>
+    <p>於信託存續期間，除本契約另有約定且符合相關法令限制者外，受託人不對受益人分配信託收益。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第八條 信託受益人</div>
-    <p>一、本契約為自益信託，委託人即受益人(即為甲方)，享有全部信託利益，受益人不得拋棄本契約項下所得享有信託受益權之一部或全部。</p>
-    <p>二、受益人不得將其所得享有信託受益權之一部或全部為轉讓、設定或質借予第三人，或為其他擔保、保證之標的。</p>
-    <p>三、本契約存續期間，若受益人身故，受益人之信託利益歸屬權利人應即將該事實以書面通知乙方，並檢附相關證明文件。若信託利益歸屬權利人怠為上述書面通知，致信託財產或其他信託財產歸屬權利人權益發生損害時，乙方概不負責。</p>
+    <div class="clause-title">第八條 受託人之義務與責任</div>
+    <p>一、受託人就信託財產之管理及運用，應以善良管理人之注意義務處理之，並負忠實義務。</p>
+    <p>二、因天然災害、戰爭、投資標的本身、市場因素、法令變更等及其他不可抗力或不可歸責於受託人之事由，致信託財產發生損害時，受託人不負損害賠償及將信託財產回復原狀之責任。</p>
+    <p>三、受託人依本契約所負之債務，僅於信託財產之限度內負履行責任。</p>
+  </div>
+
+  <div class="page-break">— 第 3 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第九條 委託人之義務與責任</div>
+    <p>一、於信託存續期間內，因處理信託事務之需要，委託人應配合提供相關資料及證明文件予受託人；如因委託人提供之資料不實，致受託人或第三人受損害者，委託人應自行負擔法律責任，並賠償受託人或第三人之損害。</p>
+    <p>二、委託人以所受領之保險金交付信託者，應交付本契約第二十九條「其他約定事項」所載之保險契約首頁（含保險公司名稱、保單號碼及保險受益人資料）影本予受託人，作為本契約之附件。委託人並應於本契約簽訂後自行洽保險公司於保單批註或為其他之約定，指示保險公司應於保險事故發生後將保險金匯入「快樂銀行受託信託財產專戶」，並將批註單或其他之約定書影本送交受託人。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第九條 受益人權益</div>
-    <p>受益人特定，且甲方無保留變更受益人及分配、處分信託利益之權利。</p>
+    <div class="clause-title">第十條 信託財產之給付</div>
+    <p>一、委託人茲指示受託人就信託財產依本契約第二十九條「其他約定事項」勾選之給付方式，將款項匯交委託人指定帳戶，委託人變更指定帳戶及給付方式（如設有信託監察人者，並應經信託監察人之書面同意），應立即以書面通知受託人，委託人若怠於通知而發生損害，概由委託人自行負擔。</p>
+    <p>二、信託存續期間內，委託人因疾病、事故、支付生前契約費用、購買醫療器材或其他事由等需提領信託財產者，得檢具醫療院所或其他相關機構出具之證明文件、單據或其他合理之說明（如設有信託監察人者，並應經信託監察人之書面同意），向受託人提出申請。受託人就各項費用證明文件內容或單據內容不負審查之責任。</p>
+    <p>三、本契約設有信託監察人者，委託人若因精神障礙或其他心智缺陷，致不能為意思表示或受意思表示，或不能辨識意思表示之效果時，於法院為監護宣告裁定前之生活照顧及必要之費用（包括但不限於法院裁定費用）之支出，委託人同意監護宣告之聲請人得檢具經信託監察人同意之申請書，及向法院聲請監護宣告之文件、委託人喪失行為能力之證明及上述相關費用收據，向受託人申請提領信託財產。受託人接獲任何已簽蓋信託監察人印鑑之申請書，經形式上之審核無誤時，即辦理信託財產匯付至委託人指定帳戶事宜。受託人就各項費用單據內容或證明文件內容不負審查之責任。</p>
+    <p>四、如信託財產實際帳載金額低於本契約約定之給付金額時，委託人同意受託人以剩餘之帳載金額扣除相關費用後給付予委託人。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第十條 報告義務</div>
-    <p>乙方應於每年一月底作成信託財產目錄，並編製收支計算表向受益人及監察人報告。乙方於本信託終止後一個月內，應作成結算書及報告書，並取得受益人及監察人之承認。</p>
-  </div>
-
-  <div class="page-note">— 第 2 頁／共 3 頁 —</div>
-
-  <div class="clause">
-    <div class="clause-title">第十一條 無償受託</div>
-    <p>乙方擔任本信託之受託人及管理信託財產均為無償受託。</p>
+    <div class="clause-title">第十一條 信託財產之結算報表</div>
+    <p>一、受託人應於每季季初15日前（如遇例假日則順延至下一銀行營業日），將截至前季季末本契約之執行情形及信託財產之狀況，製作信託財產報告書寄送委託人及信託監察人。</p>
+    <p>二、信託關係消滅時，受託人應就信託事務之處理作成信託財產結算報告書，並取得信託財產歸屬權利人及信託監察人之承認；信託財產歸屬權利人及信託監察人如無具體正當理由不得拒絕承認，信託財產歸屬權利人及信託監察人於收受信託財產結算報告書後十個銀行營業日內，未為拒絕承認之表示者，視為承認。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第十二條 費用負擔</div>
-    <p>乙方因管理信託財產所產生之稅捐、手續費及相關費用得自信託財產中扣除。</p>
+    <div class="clause-title">第十二條 受益權轉讓及設質之限制</div>
+    <p>本契約之受益權不得轉讓給他人，亦不得向任何人設定權利質權。</p>
+  </div>
+
+  <div class="page-break">— 第 4 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第十三條 受託人之報酬計算標準及支付時期</div>
+    <p>一、簽約手續費：受託人於簽訂本契約時收取新臺幣1,000元。</p>
+    <p>二、修約手續費：信託存續期間委託人申請變更本契約第二十九條「其他約定事項」或因第四條第四項之情事選任信託監察人，每次收取新臺幣1,000元，由受託人自信託財產扣收。惟變更委託人及信託監察人之基本資料無需收取修約手續費。</p>
+    <p>三、信託管理費：受託人就每日之信託財產新臺幣淨資產價值，以年率千分之二按實際信託日數計算信託管理費，每一個月計算一次，但每月最低管理費新臺幣200元，不滿一個月者以一個月計算。受託人於每月5日自信託財產內扣收上一月信託管理費，但委託人首次將信託財產存入信託專戶前，不扣收信託管理費。</p>
+    <p>四、信託財產淨資產價值之計算方式如下：</p>
+    <p class="indent-1">（一）活期性存款按每日餘額、定期性存款以存款本金金額計算。</p>
+    <p class="indent-1">（二）國內外共同基金以證券投資信託公司或國外基金公司最近公告之淨值計算。</p>
+    <p class="indent-1">（三）ETF以最近之收盤價計算。</p>
+    <p class="indent-1">（四）國外債券依計算日受託人國外債券業務公告贖回價格計算。</p>
+    <p class="indent-1">（五）外幣計價之信託財產，按計算日受託人銀行業務部門牌告即期買入匯率折算新臺幣，計算日非為受託人銀行業務部門之營業日時，則以次一個營業日牌告即期買入匯率為準。</p>
+    <p>五、信託財產不足以支應第二項之修約手續費及第三項之信託管理費時，委託人應於收到受託人書面通知後七個銀行營業日內將不足款項匯入受託人所指定之帳戶。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第十三條 訴訟處理</div>
-    <p>因處理本信託事務而有與第三人為訴訟、仲裁或交涉之必要時，縱以乙方或信託財產專戶之名義為之，其所發生之一切費用如律師費用、訴訟費用或其他處理費用均得由信託財產負擔或向甲方請求支付。</p>
+    <div class="clause-title">第十四條 各項費用之負擔及其支付方法</div>
+    <p>信託報酬及下列成本、費用或稅捐均應由委託人負擔，受託人並得自信託專戶扣取或逕以信託財產充之，如有不足部分，受託人得請求委託人補償、清償債務或提供相當之擔保：</p>
+    <p class="indent-1">（一）就信託財產或處理信託事務所生之成本、費用及稅捐。</p>
+    <p class="indent-1">（二）受託人依本契約之約定及依委託人或信託監察人之書面指示處理本契約信託事務之各項有關稅捐與費用，以及受託人因處理信託事務而與第三人發生涉訟、仲裁或其它交涉之必要而發生之一切費用（包括但不限於訴訟費用、律師費用及其他處理費用）。</p>
+    <p class="indent-1">（三）受託人就管理或處分信託財產或處理信託事務所負擔之債務。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第十四條 契約變更</div>
-    <p>本契約訂立後，若發生甲方依規定變更信託契約，應以書面為之，其變更之契約條款、說明、附錄、增補、批註等，均為本契約之構成部分。前項之書面，應製作壹式貳份，由甲乙雙方各執壹份為憑。</p>
+    <div class="clause-title">第十五條 信託契約條款之變更</div>
+    <p>一、本契約之修改，除政府法令或主管機關之命令另有規定者外，以本契約第二十九條所約定之「其他約定事項」為限，委託人應以各項變更申請書向受託人申請變更。（如設有信託監察人者，申請變更第三點及第四點信託監察人之報酬者，委託人並應檢附信託監察人之書面同意。）</p>
+    <p>二、為達保障委託人未來生活、醫療、養護或其他所需等目的，委託人茲同意若其經法院為監護之宣告時，監護人不得代理其申請變更本契約第二十九條所約定之「其他約定事項」。（如設有信託監察人者，經信託監察人之書面同意後，監護人得以書面向受託人申請變更本契約第二十九條「其他約定事項」第三點所約定之定期給付期限、給付金額或指定帳戶。）</p>
+    <p>三、因政府法令或主管機關之命令須變更本契約之內容時，受託人應於知悉後，儘速以書面通知委託人（如設有信託監察人者，並應通知信託監察人）。若委託人不同意變更內容者（如設有信託監察人者，並應經信託監察人之書面同意），得自受託人之通知送達之日起七個銀行營業日內，由委託人向受託人申請（如設有信託監察人者，應由委託人與信託監察人共同申請）終止本契約，否則視為同意變更。</p>
+    <p>四、委託人若經法院為輔助之宣告時，其為第一項之申請變更及第三項之同意變更時，應檢附輔助人之書面同意。</p>
+  </div>
+
+  <div class="page-break">— 第 5 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第十六條 信託契約之終止</div>
+    <p>信託存續期間，有下列情事之一者，本契約即終止：</p>
+    <p class="indent-1">（一）信託契約存續期間屆滿前，委託人與受託人之任一方得隨時終止本契約；但應於預定終止日前十個銀行營業日以前，以書面通知他方。委託人通知受託人終止時，如本契約設有信託監察人者，委託人並應檢附信託監察人之書面同意。但委託人終止本契約，應受本契約第十七條第一項之限制。</p>
+    <p class="indent-1">（二）委託人死亡。</p>
+    <p class="indent-1">（三）因天然災害、政府法令變更或其他不可抗力之事由，致信託目的無法達成或信託事務無法執行時。</p>
+    <p class="indent-1">（四）受託人無法繼續履行處理信託事務之義務，致信託目的無法達成或信託事務無法執行時，受託人得逕行終止。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第十五條 管轄法院</div>
-    <p>本契約涉訟時，約定以<span class="redacted">台南地院</span>為第一審管轄法院。</p>
-  </div>
-
-  <div class="page-note">— 第 3 頁／共 3 頁 —</div>
-
-  <div class="clause">
-    <div class="clause-title">第十六條 準據法</div>
-    <p>本契約適用中華民國法律，其他未盡事宜，悉依信託等相關法令及國內外金融慣例等有關規章辦理。</p>
+    <div class="clause-title">第十七條 委託人受監護宣告或輔助宣告時終止信託之限制</div>
+    <p>一、委託人茲同意若其經法院為監護之宣告時，其監護人不得代理委託人終止本契約。但依本契約第十六條第（三）款約定之情形申請終止者，不在此限。</p>
+    <p>二、委託人若經法院為輔助之宣告時，其依本契約第十六條第（一）款約定申請終止本契約時，並應檢附輔助人之書面同意。</p>
   </div>
 
   <div class="clause">
-    <div class="clause-title">第十七條 契約份數</div>
-    <p>上開信託契約係按信託法第二條規定應以契約為之，爰立本契約書壹式貳份，由甲乙雙方各執壹份為憑。</p>
+    <div class="clause-title">第十八條 信託關係消滅時剩餘信託財產之歸屬</div>
+    <p>一、本契約依第十六條約定終止時，受託人應將剩餘信託財產扣除信託費用及稅捐後之餘額（以下簡稱「剩餘信託財產淨額」），交付下列信託財產歸屬權利人：</p>
+    <p class="indent-1">（一）依第十六條第（一）款、第（三）款或第（四）款終止本契約時，剩餘信託財產淨額交付委託人。</p>
+    <p class="indent-1">（二）依第十六條第（二）款約定終止本契約時，除無繼承人者外，由委託人之繼承人依民法繼承編之規定辦理繼承，並憑稅捐稽徵機關核發之遺產稅繳清（或免稅）證明書，向受託人申請交付剩餘信託財產淨額。但繼承人有無不明者，經法院依民法第一千一百七十八條規定為公示催告所定之期限屆滿後，仍無繼承人承認繼承時，剩餘信託財產淨額由受託人依遺產管理人之書面指示交付。</p>
+    <p>二、本契約終止時，除本契約另有約定受託人得繼續將信託財產運用於本契約終止前雙方當事人同意投資之金融商品外，受託人應於本契約因第十六條第（一）款、第（三）款或第（四）款約定之事由終止日、或委託人之繼承人依前項第（二）款約定辦理繼承後向受託人申請交付或受託人依遺產管理人之書面指示交付剩餘信託財產淨額時，於十個銀行營業日內，依下列方式處理剩餘信託財產淨額：</p>
+    <p class="indent-1">（一）活期性存款：結清活期性存款帳戶。</p>
+    <p class="indent-1">（二）定期性存款：將定期性存款辦理中途解約或依信託財產歸屬權利人之指示辦理。</p>
+    <p class="indent-1">（三）國內或國外共同基金、ETF、國外債券：終止投資並賣出，賣出款項入帳後返還信託財產歸屬權利人；或依信託財產歸屬權利人之指示辦理。</p>
+    <p class="indent-1">（四）委託人如有指定其他投資標的者，受託人應依該投資標的之贖回、出售或處分規定辦理，不受十個銀行營業日內處理剩餘信託財產淨額之約定限制。</p>
+    <p>三、本契約終止時，信託財產歸屬權利人若怠於辦理結清手續或有無繼承人不明時，除本契約另有約定受託人得繼續將信託財產運用於本契約終止前雙方當事人同意投資之金融商品外，受託人於信託財產歸屬權利人請求交付或依遺產管理人之書面指示交付前，得將剩餘信託財產淨額存入活期存款。</p>
+    <p>四、前項情形，受託人於信託財產歸屬權利人請求交付或依遺產管理人之書面指示交付前，仍得依第十三條第三項及第四項約定收取信託管理費。</p>
+    <p>五、委託人未依本契約約定支付相關稅費及清償一切債務前，受託人得拒絕返還信託財產，並得處分信託財產抵償之，委託人、其繼承人或其他信託財產歸屬權利人均不得異議。</p>
   </div>
+
+  <div class="page-break">— 第 6 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第十九條 違約、補正及損害賠償</div>
+    <p>一、委託人或受託人之任一方違反本契約之約定，且未於他方以書面通知期限內補正時，應賠償他方所受之損害。</p>
+    <p>二、如因委託人之行為致生受託人受損害或第三人向受託人請求損害賠償時，委託人應賠償受託人之一切損害。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十條 個人資料保護</div>
+    <p>一、委託人（法定代理人/輔助人）及信託監察人瞭解並同意受託人因辦理信託業務之需要並合於本契約之特定目的範圍內，得將委託人（法定代理人/輔助人）及信託監察人所提供之個人資料，於本契約存續期間內或於本契約終止後，為履行本契約之權利義務所必須，提供予受託人依法委任處理事務之第三人及依法有調查權機關或金融監理機關。</p>
+    <p>二、委託人（法定代理人/輔助人）及信託監察人業經受託人告知「快樂銀行股份有限公司履行個人資料保護法告知義務書」所列事項，及「快樂銀行股份有限公司遵循FATCA法案個人資料告知事項」－自然人適用，並瞭解受託人蒐集、處理及利用個人資料之目的及用途。</p>
+    <p>三、委託人（法定代理人/輔助人）同意受託人於信託存續期間內得向保險公司查詢本契約第二十九條「其他約定事項」所記載保單或保險契約之內容及效力。</p>
+    <p>四、委託人（法定代理人/輔助人）同意受託人於執行本信託業務範圍內，得將因本契約衍生之問題委請律師或專門職業人員代為處理，受託人並得將委託人（法定代理人/輔助人）之相關資料交付律師或專門職業人員，但受託人應責由律師或專門職業人員負保密義務。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十一條 印鑑之留存</div>
+    <p>一、委託人及信託監察人應於受託人處留存印鑑，作為本契約信託事務書面往來之依據。</p>
+    <p>二、前項留存印鑑如有變更、遺失或毀損，應即向受託人辦理掛失及變更手續，在受託人接受書面申請前，如被他人冒用而經受託人為形式上之審核無誤所致之損失，受託人不負任何責任。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十二條 指示與通知</div>
+    <p>一、委託人所有指示事項及信託監察人執行其職務，均應以簽蓋前條留存印鑑之書面為之。受託人接獲任何已簽蓋留存印鑑之書面指示，該等書面經受託人為形式上之審核無誤時，即視同委託人之指示或信託監察人執行職務之表示。</p>
+    <p>二、委託人、受託人及信託監察人以書面通知方式，就本契約有關事項所為之指示、通知與報告，應遞送至本契約所載通訊地址，除第十一條第一項信託財產報告書外，均應以掛號為之。</p>
+    <p>三、各方當事人於本契約所載地址如有變更，應就其變更事項以書面通知他方。如未為通知，各方當事人依本契約約定之方式，將有關文書對前述地址或其所接受最後通知之地址寄（發）出後，經通常之郵遞期間即視為送達。</p>
+  </div>
+
+  <div class="page-break">— 第 7 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第二十三條 稅捐</div>
+    <p>一、委託人因本契約而發生之任何稅捐（包括但不限於綜合所得稅、贈與稅等），其應由委託人申報繳納者，由委託人自行辦理。</p>
+    <p>二、因本契約而發生之任何稅捐，如依我國相關法令，須以受託人名義申報繳納者，受託人得逕自信託財產扣抵。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十四條 適用法令及管轄法院</div>
+    <p>一、本契約適用之法律為中華民國法律。如因本契約及其有關事項涉訟，各方當事人同意以臺灣臺北地方法院為第一審管轄法院，但法律有專屬管轄或排除合意管轄之特別規定者，從其規定。</p>
+    <p>二、本契約未約定事項，悉依中華民國信託法及有關法令、誠信原則及雙方當事人事後之書面合意補充之。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十五條 遵循FATCA法案約定條款</div>
+    <p>一、委託人瞭解並同意，受託人因遵循美國「海外帳戶稅收遵從法」（Foreign Account Tax Compliance Act，下稱「FATCA法案」）、與美國國稅局所簽署之相關協議（下稱「協議」）及中華民國主管機關所簽署之跨政府協議（Intergovernmental Agreement，以下稱「IGA」）之相關規定，或受美國國稅局或其他主管機關要求，須提供受託人客戶中屬於美國公民、綠卡持有人或其他美國稅法定義之稅務居民之相關資訊，包含但不限於姓名、地址、美國稅籍編號、美國實質股東資訊、帳號、帳戶餘額及交易明細等資訊時，委託人有義務依受託人之請求立即向受託人提供相關資訊及文件。</p>
+    <p>二、委託人瞭解並同意就其FATCA法案身分類別應主動據實告知並提供或依受託人要求提供其FATCA法案身分類別之相關文件、資訊予受託人。嗣後委託人之FATCA法案身分類別倘有變更，應立即以書面告知並提供變更後之資料及證明文件予受託人。</p>
+    <p>三、委託人未履行前二項約定之據實告知義務或未配合提供代表委託人身分類別之相關文件，受託人得依FATCA法案、協議或IGA之相關規定辦理。</p>
+    <p>四、委託人拒絕提供表示其FATCA法案身分類別之相關文件或配合受託人依FATCA法案規定申報而被列為FATCA法案「不合作帳戶」時，委託人同意受託人得依FATCA法案、協議或IGA規定採取必要之措施。</p>
+    <p>五、本約定條款如有未盡事宜，悉依FATCA法案、協議、IGA相關規定及相關法令辦理。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十六條 其他</div>
+    <p>一、受託人就委託人之基本資料及往來交易資料，除其他法律或主管機關另有規定外，應保守秘密，並不得向信託專責部門以外其他部門之人揭露、轉介或交互運用。</p>
+    <p>二、委託人就受託人辦理信託財產之管理運用有任何紛爭或爭議時，得依受託人公告於營業場所及網站之信託業務紛爭處理須知及申訴管道，向受託人提出申訴。</p>
+    <p>三、本契約條款之標題，係為便利閱讀而設，不得作為條款解釋之唯一依據。</p>
+    <p>四、依本契約約定所出具之指示書、各項變更申請書、印鑑掛失及（或）更換印鑑申請書暨印鑑卡等書面格式，由受託人提供。</p>
+    <p>五、為防制洗錢及打擊資恐之目的，委託人/法定代理人/輔助人/信託監察人被認定為資恐防制法指定制裁之個人、法人或團體，以及外國政府或國際組織認定或追查之恐怖分子或團體，受託人得拒絕或終止業務往來；委託人/法定代理人/輔助人/信託監察人不配合受託人定期審視、對交易之性質與目的或資金來源不願配合說明等，受託人得暫時停止交易，或暫時停止或終止業務關係。</p>
+    <p>六、受託人因確認客戶、交易有關對象是否為制裁及恐怖分子名單時，委託人/法定代理人/輔助人/信託監察人應即時提供相關資料予受託人確認，如不配合致受託人未能即時比對，造成交易之失敗或延遲，受託人不負損害賠償責任。</p>
+  </div>
+
+  <div class="page-break">— 第 8 頁／共 13 頁 —</div>
+
+  <div class="clause">
+    <div class="clause-title">第二十七條 附件之效力</div>
+    <p>一、本契約之附件為本契約之一部分，除另有約定外，與本契約之條款具有同一效力。</p>
+    <p>二、本契約第二十九條「其他約定事項」所記載之保單或保險契約如有失效、無效、解除或終止，或委託人未依本契約第九條第二項之約定於保單批註或為其他約定由保險公司將保險金匯入「快樂銀行受託信託財產專戶」，並將批註單或其他之約定書影本送交受託人，或有其他事由發生，致本契約無保險金匯入時，本契約有關保險金之運用、管理，以及其他須由受託人負管理義務責任之約定，自保單或保險契約失效、無效、解除或終止時，失其效力。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十八條 信託契約作成與收執</div>
+    <p>本契約正本壹式貳份，由雙方當事人各執壹份為憑，信託監察人各執壹份影本存查。</p>
+  </div>
+
+  <div class="clause">
+    <div class="clause-title">第二十九條 其他約定事項</div>
+    <p>本契約之「其他約定事項」詳如第11頁至第13頁記載。</p>
+  </div>
+
+  <!-- ===== 第 11 頁 ～ 第 12 頁：其他約定事項（表格） ===== -->
+
+  <div class="page-break">— 第 9 頁／共 13 頁（第11頁原版） —</div>
+
+  <div class="clause" style="border: 2px solid #c9a96e; padding: 20px; border-radius: 4px;">
+    <div style="font-size: 20px; font-weight: bold; color: #8b4513; margin-bottom: 20px; text-align: center;">其他約定事項</div>
+
+    <p style="font-weight: bold; margin-bottom: 10px;">一、委託人（兼受益人）基本資料</p>
+
+    <table class="form-table">
+      <tr>
+        <th>姓名</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>身分證字號</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>出生年月日</th>
+        <td colspan="3"><span class="redacted">[已代碼化]</span> 年 <span class="redacted">[已代碼化]</span> 月 <span class="redacted">[已代碼化]</span> 日</td>
+      </tr>
+      <tr>
+        <th>戶籍地址</th>
+        <td colspan="3"><span class="redacted">[已代碼化]</span> <span style="color:#aaa;">（郵遞區號：<span class="redacted">[已代碼化]</span>）</span></td>
+      </tr>
+      <tr>
+        <th>通訊地址</th>
+        <td colspan="3"><span class="redacted">[已代碼化]</span> □同戶籍 <span style="color:#aaa;">（郵遞區號：<span class="redacted">[已代碼化]</span>）</span></td>
+      </tr>
+      <tr>
+        <th>聯絡電話</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>手機號碼</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>電子信箱</th>
+        <td colspan="3"><span class="redacted">[已代碼化]</span></td>
+      </tr>
+    </table>
+
+    <table class="form-table" style="margin-top: 12px;">
+      <tr>
+        <th rowspan="3" style="width:100px;">法定代理人/<br>輔助人</th>
+        <th style="width:80px;">姓名</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>身分證字號</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>通訊地址</th>
+        <td colspan="3"><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>電子信箱</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>出生年月日</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th colspan="2">與委託人關係</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>聯絡電話</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th colspan="2">手機號碼</th>
+        <td colspan="3"><span class="redacted">[已代碼化]</span></td>
+      </tr>
+    </table>
+
+    <table class="form-table" style="margin-top: 8px;">
+      <tr>
+        <th rowspan="3">信託<br>監察人</th>
+        <th style="width:80px;">姓名</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>身分證字號</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>出生年月日</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>與委託人關係</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>聯絡電話</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>手機號碼</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="page-break">— 第 10 頁／共 13 頁（第11-12頁原版） —</div>
+
+  <div class="clause" style="border: 2px solid #c9a96e; padding: 20px; border-radius: 4px;">
+    <p style="font-weight: bold; margin-bottom: 10px;">二、交付之信託財產</p>
+    <p>新臺幣 <span class="redacted">[已代碼化]</span> 億 <span class="redacted">[已代碼化]</span> 仟 <span class="redacted">[已代碼化]</span> 佰 <span class="redacted">[已代碼化]</span> 拾 <span class="redacted">[已代碼化]</span> 萬 <span class="redacted">[已代碼化]</span> 仟 <span class="redacted">[已代碼化]</span> 佰 <span class="redacted">[已代碼化]</span> 拾 <span class="redacted">[已代碼化]</span> 元整</p>
+    <p class="note">（委託人於受託人通知信託專戶帳號後，應即交付信託財產，並以信託專戶實際入帳金額為準）</p>
+
+    <p style="margin-top:12px;"><strong>委託人同意交付保險金</strong></p>
+    <table class="form-table">
+      <tr>
+        <th>保險公司名稱</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>保單號碼</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+      <tr>
+        <th>保險公司名稱</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+        <th>保單號碼</th>
+        <td><span class="redacted">[已代碼化]</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="clause" style="border: 2px solid #c9a96e; padding: 20px; border-radius: 4px; margin-top: 20px;">
+    <p style="font-weight: bold; margin-bottom: 10px;">三、信託財產之給付</p>
+
+    <p style="font-weight: bold; margin-top:12px;">（一）委託人本人</p>
+    <table class="form-table">
+      <tr><th style="width:140px;">定期給付期限</th><td colspan="3"><span class="redacted">[已代碼化]</span>（於下列約定月份之8日，遇假日為次一銀行營業日）</td></tr>
+      <tr><th>給付金額</th><td>新臺幣 <span class="redacted">[已代碼化]</span> 元</td><th>指定帳戶</th><td>限本人在國內金融機構開立之新臺幣存款帳戶</td></tr>
+      <tr><th rowspan="3">給付方式</th><td colspan="3">□按月（自 <span class="redacted">[已代碼化]</span> 年 <span class="redacted">[已代碼化]</span> 月起）新臺幣 <span class="redacted">[已代碼化]</span> 元</td></tr>
+      <tr><td colspan="3">□按季（自 <span class="redacted">[已代碼化]</span> 年起每季第一個月）新臺幣 <span class="redacted">[已代碼化]</span> 元</td></tr>
+      <tr><td colspan="3">□按年（自 <span class="redacted">[已代碼化]</span> 年起每年第 <span class="redacted">[已代碼化]</span> 個月）新臺幣 <span class="redacted">[已代碼化]</span> 元</td></tr>
+      <tr><td colspan="4"><span style="color:#999;">銀行：<span class="redacted">[已代碼化]</span> 分行：<span class="redacted">[已代碼化]</span> 帳號：<span class="redacted">[已代碼化]</span></span></td></tr>
+      <tr><td colspan="4">□委託人於實際需要時通知受託人給付內容（設有信託監察人者，檢附信託監察人同意之書面文件）。</td></tr>
+    </table>
+
+    <p style="font-weight: bold; margin-top:12px;">（二）指定受款人</p>
+    <table class="form-table">
+      <tr><th style="width:140px;">定期給付期限</th><td colspan="3"><span class="redacted">[已代碼化]</span>（於下列約定月份之8日，遇假日為次一銀行營業日）</td></tr>
+      <tr><th>給付金額</th><td>新臺幣 <span class="redacted">[已代碼化]</span> 元</td><th>指定帳戶</th><td>限委託人本人養護之醫療院所、安養機構或其他相關機構帳戶</td></tr>
+      <tr><th rowspan="2">受款人1</th>
+          <td colspan="3">戶名：<span class="redacted">[已代碼化]</span>　銀行：<span class="redacted">[已代碼化]</span>　分行：<span class="redacted">[已代碼化]</span>　帳號：<span class="redacted">[已代碼化]</span></td></tr>
+      <tr><td colspan="3">□按月（自 <span class="redacted">[已代碼化]</span> 年 <span class="redacted">[已代碼化]</span> 月起）新臺幣 <span class="redacted">[已代碼化]</span> 元　□按季　□按年</td></tr>
+      <tr><th rowspan="2">受款人2</th>
+          <td colspan="3">戶名：<span class="redacted">[已代碼化]</span>　銀行：<span class="redacted">[已代碼化]</span>　分行：<span class="redacted">[已代碼化]</span>　帳號：<span class="redacted">[已代碼化]</span></td></tr>
+      <tr><td colspan="3">□按月（自 <span class="redacted">[已代碼化]</span> 年 <span class="redacted">[已代碼化]</span> 月起）新臺幣 <span class="redacted">[已代碼化]</span> 元　□按季　□按年</td></tr>
+      <tr><td colspan="4">□委託人於實際需要時通知受託人給付內容（設有信託監察人者，檢附信託監察人同意之書面文件）。</td></tr>
+    </table>
+  </div>
+
+  <div class="page-break">— 第 11 頁／共 13 頁（第12頁原版） —</div>
+
+  <div class="clause" style="border: 2px solid #c9a96e; padding: 20px; border-radius: 4px;">
+    <p style="font-weight: bold;">指定受款人基本資料</p>
+    <table class="form-table">
+      <tr><th>1. 名稱</th><td><span class="redacted">[已代碼化]</span></td><th>統一編號</th><td><span class="redacted">[已代碼化]</span></td></tr>
+      <tr><th>通訊地址</th><td colspan="3"><span class="redacted">[已代碼化]</span></td></tr>
+      <tr><th>連絡方式</th><td colspan="3"><span class="redacted">[已代碼化]</span></td></tr>
+      <tr><th>2. 名稱</th><td><span class="redacted">[已代碼化]</span></td><th>統一編號</th><td><span class="redacted">[已代碼化]</span></td></tr>
+      <tr><th>通訊地址</th><td colspan="3"><span class="redacted">[已代碼化]</span></td></tr>
+      <tr><th>連絡方式</th><td colspan="3"><span class="redacted">[已代碼化]</span></td></tr>
+    </table>
+  </div>
+
+  <div class="clause" style="border: 2px solid #c9a96e; padding: 20px; border-radius: 4px; margin-top: 20px;">
+    <p style="font-weight: bold;">四、信託監察人（請另填具信託監察人願任同意書）</p>
+    <p>□ 1. 委託人指定之信託監察人及報酬約定如下：</p>
+    <table class="form-table">
+      <tr><th>信託監察人姓名/名稱</th><td><span class="redacted">[已代碼化]</span></td><th>身分證字號/統一編號</th><td><span class="redacted">[已代碼化]</span></td></tr>
+      <tr><th>報酬給付</th><td colspan="3">□ 無　□ 有　每季新臺幣 <span class="redacted">[已代碼化]</span> 元（於次季8日自信託財產支付）</td></tr>
+    </table>
+    <p style="margin-top:8px;">（2）約定後順位信託監察人共 <span class="redacted">[已代碼化]</span> 人，順位如下：</p>
+    <table class="form-table">
+      <tr><th>順位</th><th>姓名</th><th>身分證字號/統一編號</th><th>報酬給付</th></tr>
+      <tr><td>第二順位</td><td><span class="redacted">[已代碼化]</span></td><td><span class="redacted">[已代碼化]</span></td><td>□無　□有　每季 <span class="redacted">[已代碼化]</span> 元</td></tr>
+      <tr><td>第三順位</td><td><span class="redacted">[已代碼化]</span></td><td><span class="redacted">[已代碼化]</span></td><td>□無　□有　每季 <span class="redacted">[已代碼化]</span> 元</td></tr>
+      <tr><td>第四順位</td><td><span class="redacted">[已代碼化]</span></td><td><span class="redacted">[已代碼化]</span></td><td>□無　□有　每季 <span class="redacted">[已代碼化]</span> 元</td></tr>
+    </table>
+    <p class="note">備註：報酬給付勾選「有」時，需填寫於次季8日自信託財產支付金額。</p>
+    <p style="margin-top:8px;">□ 2. 無信託監察人。</p>
+  </div>
+
+  <div class="clause" style="border: 2px solid #c9a96e; padding: 20px; border-radius: 4px; margin-top: 20px;">
+    <p style="font-weight: bold;">五、聲明事項</p>
+    <p>經受託人依金融消費者保護法及其子法相關規定於本契約中予以充分說明其重要內容及揭露可能涉及之風險資訊，委託人（法定代理人/輔助人）已充分瞭解本契約之重要內容及可能涉及之投資風險，並已於簽訂本契約前審閱前開全部條款，茲同意並簽章。</p>
+  </div>
+
+  <!-- ===== 第 13 頁：立約人簽章（個資已代碼化） ===== -->
+
+  <div class="page-break">— 第 12 頁／共 13 頁（第13頁原版，個資已代碼化） —</div>
 
   <div class="signature-area">
-    <div class="signature-block">
-      <div class="title">委託人：<span class="redacted">王小姐</span></div>
-      <div>簽章：</div>
-      <div class="line"></div>
-      <div class="label">身分證字號：<span class="redacted">00</span></div>
+    <p style="font-weight: bold; font-size: 20px; margin-bottom: 30px;">立約人簽章：</p>
+
+    <p style="font-weight: bold; margin-bottom: 20px;">委託人（法定代理人/輔助人）簽名及蓋章：</p>
+
+    <div class="signature-row">
+      <div class="signature-block">
+        <div class="title">委託人：</div>
+        <div class="line"></div>
+        <div class="label" style="margin-top:30px;">（核對本人親簽）</div>
+      </div>
+      <div class="signature-block">
+        <div class="title">法定代理人：</div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="signature-block">
+        <div class="title">輔助人：</div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="label" style="margin-top:10px;">（註：委託人受輔助宣告時，應經輔助人簽名及蓋章表示同意）</div>
+      </div>
     </div>
-    <div class="signature-block">
-      <div class="title">受託人：<span class="redacted">王媽媽</span></div>
-      <div>簽章：</div>
-      <div class="line"></div>
-      <div class="label">身分證字號：<span class="redacted">00</span></div>
+
+    <div style="margin-top: 40px; background: #f9f6f2; padding: 20px; border-left: 4px solid #c9a96e;">
+      <p style="font-weight: bold; margin-bottom: 10px;">受託人：快樂銀行股份有限公司</p>
+      <p>統一編號：<span class="redacted">[已代碼化]</span></p>
+      <p>代表人：<span class="redacted">[已代碼化]</span></p>
+      <p>業務代理人：<span class="redacted">[已代碼化]</span></p>
+      <p>聯絡電話：<span class="redacted">[已代碼化]</span></p>
+      <p>地址：<span class="redacted">[已代碼化]</span></p>
     </div>
+
+    <div style="margin-top: 20px; text-align: right;">
+      <p style="font-size: 16px; color: #888;">（受託人鈐印）</p>
+    </div>
+
+    <div class="date-area">
+      簽約日期：中華民國　　年　　月　　日
+    </div>
+    <p class="note" style="text-align: center;">（由本行填寫）</p>
   </div>
 
-  <div class="date-area">
-    中 華 民 國 1 1 4 年 &nbsp;&nbsp; 月 &nbsp;&nbsp; 日
+  <div class="page-break">— 第 13 頁／共 13 頁 —</div>
+
+  <div class="clause" style="background: #f5f0eb; padding: 20px; border-radius: 4px; margin-top: 30px;">
+    <p style="text-align: center; font-size: 17px; color: #666;">
+      本頁面為教學範本，原第14頁「個人資料保護法告知義務書」及第15頁「遵循FATCA法案個人資料告知事項」<br>
+      因涉及銀行內部法定告知事項，未予納入。如有需要請參閱原始契約書。
+    </p>
   </div>
+
 </div>
 </body>
 </html>
